@@ -4,7 +4,6 @@ import Script from 'dangerous-html/react'
 import { Helmet } from 'react-helmet'
 
 import Navbar from '../components/navbar'
-import Collection from '../components/collection'
 import FAQ from '../components/faq'
 import Footer from '../components/footer'
 import './home.css'
@@ -20,24 +19,25 @@ const Home = (props) => {
       <section className="home-hero">
         <div className="home-heading">
           <h1 className="home-header">
+            <span>Do more on </span>
+            <br></br>
             <span>
-              Do more with
+              Notion.so
               <span
                 dangerouslySetInnerHTML={{
                   __html: ' ',
                 }}
               />
             </span>
-            <br></br>
-            <span>Your Notion</span>
+            <span>with us</span>
           </h1>
           <p className="home-caption">
-            Leveraging a decade of tech experience and the power of Notion.so to
-            transform your business processes
+            Leveraging ≥ 10 years of tech experience and the power of Notion.so
+            to streamline your business operations
           </p>
         </div>
         <div className="home-buttons">
-          <button className="button">Browse our templates!</button>
+          <button className="button">Browse our templates</button>
           <button className="home-learn button-clean button">Learn more</button>
         </div>
       </section>
@@ -99,7 +99,7 @@ const Home = (props) => {
                 </p>
               </div>
               <button className="home-learn1 button">
-                <span className="home-text04">Learn more</span>
+                <span className="home-text05">Learn more</span>
                 <img
                   alt="image"
                   src="/Icons/arrow.svg"
@@ -129,7 +129,7 @@ const Home = (props) => {
                 </p>
               </div>
               <button className="home-learn2 button">
-                <span className="home-text05">Learn more</span>
+                <span className="home-text06">Learn more</span>
                 <img
                   alt="image"
                   src="/Icons/arrow-2.svg"
@@ -161,7 +161,7 @@ const Home = (props) => {
                 </p>
               </div>
               <button className="home-learn3 button">
-                <span className="home-text06">Learn more</span>
+                <span className="home-text07">Learn more</span>
                 <img
                   alt="image"
                   src="/Icons/arrow-2.svg"
@@ -173,7 +173,6 @@ const Home = (props) => {
           </div>
         </div>
       </section>
-      <Collection></Collection>
       <section className="home-project">
         <div className="home-understand">
           <div className="home-content4">

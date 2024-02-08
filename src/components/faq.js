@@ -135,37 +135,37 @@ const FAQ = (props) => {
 }
 
 FAQ.defaultProps = {
-  header: 'We have all the answers',
-  header1: 'Lorem ipsum dolor sit ametetur elit?',
-  description:
-    'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. ',
-  header2:
-    'Excepteur sint occaecat cupidatat non sunt in culpa qui officia deserunt mollit anim id est laborum?',
   description1:
     'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. ',
   header3: 'Tempor incididunt ut labore et dolore magna aliquat enim ad minim?',
-  description2:
+  description:
     'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. ',
   header4: 'Lorem ipsum dolor sit ametetur elit?',
   description3:
     'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. ',
-  header5: 'Incididunt ut labore et dolore?',
+  header2:
+    'Excepteur sint occaecat cupidatat non sunt in culpa qui officia deserunt mollit anim id est laborum?',
+  description2:
+    'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. ',
+  header1: 'Lorem ipsum dolor sit ametetur elit?',
   description4:
     'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. ',
+  header5: 'Incididunt ut labore et dolore?',
+  header: 'We have all the answers',
 }
 
 FAQ.propTypes = {
-  header: PropTypes.string,
-  header1: PropTypes.string,
-  description: PropTypes.string,
-  header2: PropTypes.string,
   description1: PropTypes.string,
   header3: PropTypes.string,
-  description2: PropTypes.string,
+  description: PropTypes.string,
   header4: PropTypes.string,
   description3: PropTypes.string,
-  header5: PropTypes.string,
+  header2: PropTypes.string,
+  description2: PropTypes.string,
+  header1: PropTypes.string,
   description4: PropTypes.string,
+  header5: PropTypes.string,
+  header: PropTypes.string,
 }
 
 export default FAQ
