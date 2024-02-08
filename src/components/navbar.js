@@ -9,7 +9,9 @@ const Navbar = (props) => {
   return (
     <div className={`navbar-container ${props.rootClassName} `}>
       <header data-thq="thq-navbar" className="navbar-navbar">
-        <span className="navbar-logo">{props.logo}</span>
+        <Link to="/" className="navbar-logo">
+          {props.logo}
+        </Link>
         <div
           data-thq="thq-navbar-nav"
           data-role="Nav"
@@ -20,16 +22,19 @@ const Navbar = (props) => {
             data-role="Nav"
             className="navbar-nav"
           >
-            <button className="navbar-button button-clean button">
+            <Link to="/" className="navbar-navlink button-clean button">
               {props.button}
-            </button>
-            <Link to="/services" className="navbar-navlink button-clean button">
+            </Link>
+            <Link
+              to="/services"
+              className="navbar-navlink1 button-clean button"
+            >
               {props.button1}
             </Link>
-            <button className="navbar-button1 button-clean button">
+            <button className="navbar-button button-clean button">
               {props.button2}
             </button>
-            <button className="navbar-button2 button-clean button">
+            <button className="navbar-button1 button-clean button">
               {props.button3}
             </button>
           </nav>
@@ -47,7 +52,7 @@ const Navbar = (props) => {
           <button className="button">{props.view}</button>
         </div>
         <div data-thq="thq-burger-menu" className="navbar-burger-menu">
-          <button className="button navbar-button3">
+          <button className="button navbar-button2">
             <svg viewBox="0 0 1024 1024" className="navbar-icon">
               <path
                 d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
@@ -118,7 +123,7 @@ const Navbar = (props) => {
 Navbar.defaultProps = {
   logo: 'NotionPod.co',
   view: 'Hire us!',
-  button: 'About',
+  button: 'Home',
   button1: 'Services',
   button2: 'Templates',
   button3: 'Blog',
