@@ -55,24 +55,10 @@ const Home = (props) => {
                 2019.
               </p>
               <p className="home-paragraph1">
-                <span>
-                  Notion&apos;s versatility has empowered us to streamline
-                  workflows, enhance productivity, and maintain effective
-                  communication channels.
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: ' ',
-                    }}
-                  />
-                </span>
-                <br></br>
-                <br></br>
-                <span>
-                  From project management, OKRs tracking, monthly evaluation,
-                  daily tasks, to personal note-taking, Notion.so has proven
-                  invaluable in facilitating our team&apos;s success and
-                  efficiency across various endeavors.
-                </span>
+                From project management, OKRs tracking, monthly evaluation,
+                daily tasks, to personal note-taking, Notion.so has proven
+                invaluable in facilitating our team&apos;s success and
+                efficiency across various endeavors.
               </p>
             </div>
             <Link to="/collection" className="home-navlink">
@@ -115,7 +101,7 @@ const Home = (props) => {
                 </p>
               </div>
               <Link to="/services" className="home-learn1 button">
-                <span className="home-text09">See our services</span>
+                <span className="home-text05">See our services</span>
                 <img
                   alt="image"
                   src="/Icons/arrow.svg"
@@ -149,7 +135,7 @@ const Home = (props) => {
                 </p>
               </div>
               <Link to="/about" className="home-learn2 button">
-                <span className="home-text10">Learn more</span>
+                <span className="home-text06">Learn more</span>
                 <img
                   alt="image"
                   src="/Icons/arrow-2.svg"
@@ -176,7 +162,7 @@ const Home = (props) => {
                 </p>
               </div>
               <button className="home-learn3 button">
-                <span className="home-text11">Hire us</span>
+                <span className="home-text07">Hire us</span>
                 <img
                   alt="image"
                   src="/Icons/arrow-2.svg"
