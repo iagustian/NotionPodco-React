@@ -237,13 +237,13 @@ const Home = (props) => {
                 <br></br>
               </p>
             </div>
-            <Link to="/services" className="home-view2 button-link button">
+            <a href="#4approach" className="home-view2 button-link button">
               <span>
-                <span>See our services</span>
+                <span>Learn more</span>
                 <br></br>
               </span>
               <img alt="image" src="/Icons/arrow.svg" className="home-image6" />
-            </Link>
+            </a>
           </div>
         </div>
       </section>
@@ -260,7 +260,7 @@ const Home = (props) => {
             <br></br>
           </p>
         </div>
-        <div className="home-list">
+        <div id="4approach" className="home-list">
           <div className="home-step">
             <span className="home-caption3">01</span>
             <div className="home-heading4">

@@ -82,9 +82,11 @@
 }
 .footer-link {
   color: rgb(255, 255, 255);
+  text-decoration: none;
 }
 .footer-link1 {
   color: rgb(255, 255, 255);
+  text-decoration: none;
 }
 .footer-link2 {
   color: rgb(255, 255, 255);
@@ -112,6 +114,7 @@
 }
 .footer-link4 {
   color: rgb(255, 255, 255);
+  text-decoration: none;
 }
 .footer-link5 {
   color: rgb(255, 255, 255);

@@ -42,10 +42,11 @@
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
-.navbar-button {
+.navbar-navlink2 {
   color: rgb(255, 255, 255);
+  text-decoration: none;
 }
-.navbar-button1 {
+.navbar-button {
   color: rgb(255, 255, 255);
 }
 .navbar-btn-group {
@@ -121,16 +122,16 @@
   align-items: flex-start;
   flex-direction: column;
 }
+.navbar-text {
+  margin-bottom: var(--dl-space-space-unit);
+}
+.navbar-text1 {
+  margin-bottom: var(--dl-space-space-unit);
+}
+.navbar-text2 {
+  margin-bottom: var(--dl-space-space-unit);
+}
 .navbar-text3 {
-  margin-bottom: var(--dl-space-space-unit);
-}
-.navbar-text4 {
-  margin-bottom: var(--dl-space-space-unit);
-}
-.navbar-text5 {
-  margin-bottom: var(--dl-space-space-unit);
-}
-.navbar-text6 {
   margin-bottom: var(--dl-space-space-unit);
 }
 .navbar-container2 {
@@ -205,10 +206,7 @@
   .navbar-navlink1 {
     color: rgb(255, 255, 255);
   }
-  .navbar-button {
-    color: rgb(255, 255, 255);
-  }
-  .navbar-text1 {
+  .navbar-navlink2 {
     color: rgb(255, 255, 255);
   }
 }
@@ -222,7 +220,7 @@
   .navbar-burger-menu {
     display: flex;
   }
-  .navbar-button2 {
+  .navbar-button1 {
     display: flex;
     padding: var(--dl-space-space-unit);
     flex-direction: row;

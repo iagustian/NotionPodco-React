@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import PropTypes from 'prop-types'
 
@@ -32,12 +33,15 @@ const Footer = (props) => {
           <div className="footer-list">
             <h3 className="footer-heading1">{props.heading}</h3>
             <div className="footer-items">
-              <button className="footer-link button-clean button">
+              <Link to="/services" className="footer-link button-clean button">
                 Services
-              </button>
-              <button className="footer-link1 button-clean button">
+              </Link>
+              <Link
+                to="/collection"
+                className="footer-link1 button-clean button"
+              >
                 Collection
-              </button>
+              </Link>
               <button className="footer-link2 button-clean button">Blog</button>
               <button className="footer-link3 button-clean button">
                 Q&amp;A
@@ -47,9 +51,9 @@ const Footer = (props) => {
           <div className="footer-list1">
             <h3 className="footer-heading2">{props.heading1}</h3>
             <div className="footer-items1">
-              <button className="footer-link4 button-clean button">
+              <Link to="/about" className="footer-link4 button-clean button">
                 About
-              </button>
+              </Link>
               <button className="footer-link5 button-clean button">
                 {props.link6}
               </button>

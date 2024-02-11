@@ -31,13 +31,13 @@ const Navbar = (props) => {
             >
               {props.button1}
             </Link>
+            <Link
+              to="/collection"
+              className="navbar-navlink2 button-clean button"
+            >
+              {props.button11}
+            </Link>
             <button className="navbar-button button-clean button">
-              <span className="">
-                <span className="navbar-text1">Collection</span>
-                <br className=""></br>
-              </span>
-            </button>
-            <button className="navbar-button1 button-clean button">
               {props.button3}
             </button>
           </nav>
@@ -55,7 +55,7 @@ const Navbar = (props) => {
           <button className="button">{props.view}</button>
         </div>
         <div data-thq="thq-burger-menu" className="navbar-burger-menu">
-          <button className="button navbar-button2">
+          <button className="button navbar-button1">
             <svg viewBox="0 0 1024 1024" className="navbar-icon">
               <path
                 d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
@@ -86,10 +86,10 @@ const Navbar = (props) => {
               data-role="Nav"
               className="navbar-nav2"
             >
-              <span className="navbar-text3">{props.text}</span>
-              <span className="navbar-text4">Services</span>
-              <span className="navbar-text5">Collection</span>
-              <span className="navbar-text6">{props.text4}</span>
+              <span className="navbar-text">{props.text}</span>
+              <span className="navbar-text1">Services</span>
+              <span className="navbar-text2">Collection</span>
+              <span className="navbar-text3">{props.text4}</span>
             </nav>
             <div className="navbar-container2">
               <button className="navbar-login button">
@@ -138,6 +138,7 @@ Navbar.defaultProps = {
   text3: 'Team',
   imageAlt: 'image',
   logo1: 'Character',
+  button11: 'Collection',
 }
 
 Navbar.propTypes = {
@@ -154,6 +155,7 @@ Navbar.propTypes = {
   text3: PropTypes.string,
   imageAlt: PropTypes.string,
   logo1: PropTypes.string,
+  button11: PropTypes.string,
 }
 
 export default Navbar
