@@ -32,7 +32,10 @@ const Navbar = (props) => {
               {props.button1}
             </Link>
             <button className="navbar-button button-clean button">
-              {props.button2}
+              <span className="">
+                <span className="navbar-text1">Collection</span>
+                <br className=""></br>
+              </span>
             </button>
             <button className="navbar-button1 button-clean button">
               {props.button3}
@@ -83,14 +86,15 @@ const Navbar = (props) => {
               data-role="Nav"
               className="navbar-nav2"
             >
-              <span className="navbar-text">{props.text}</span>
-              <span className="navbar-text1">{props.text1}</span>
-              <span className="navbar-text2">{props.text2}</span>
-              <span className="navbar-text3">{props.text3}</span>
-              <span className="navbar-text4">{props.text4}</span>
+              <span className="navbar-text3">{props.text}</span>
+              <span className="navbar-text4">Services</span>
+              <span className="navbar-text5">Collection</span>
+              <span className="navbar-text6">{props.text4}</span>
             </nav>
             <div className="navbar-container2">
-              <button className="navbar-login button">{props.login}</button>
+              <button className="navbar-login button">
+                Browse our collection
+              </button>
               <button className="button">{props.register}</button>
             </div>
           </div>
@@ -121,17 +125,13 @@ const Navbar = (props) => {
 }
 
 Navbar.defaultProps = {
-  text2: 'Pricing',
   logo: 'NotionPod.co',
   register: 'Hire us!',
   button3: 'Blog',
-  text1: 'Features',
   button: 'Home',
   imageSrc: '/Icons/twitter.svg',
-  button2: 'Templates',
   text: 'About',
   text4: 'Blog',
-  login: 'Browse our templates',
   view: 'Hire us!',
   button1: 'Services',
   rootClassName: '',
@@ -141,17 +141,13 @@ Navbar.defaultProps = {
 }
 
 Navbar.propTypes = {
-  text2: PropTypes.string,
   logo: PropTypes.string,
   register: PropTypes.string,
   button3: PropTypes.string,
-  text1: PropTypes.string,
   button: PropTypes.string,
   imageSrc: PropTypes.string,
-  button2: PropTypes.string,
   text: PropTypes.string,
   text4: PropTypes.string,
-  login: PropTypes.string,
   view: PropTypes.string,
   button1: PropTypes.string,
   rootClassName: PropTypes.string,

@@ -33,16 +33,14 @@ const Footer = (props) => {
             <h3 className="footer-heading1">{props.heading}</h3>
             <div className="footer-items">
               <button className="footer-link button-clean button">
-                {props.link}
+                Services
               </button>
               <button className="footer-link1 button-clean button">
-                {props.link1}
+                Collection
               </button>
-              <button className="footer-link2 button-clean button">
-                {props.link2}
-              </button>
+              <button className="footer-link2 button-clean button">Blog</button>
               <button className="footer-link3 button-clean button">
-                {props.link3}
+                Q&amp;A
               </button>
             </div>
           </div>
@@ -50,19 +48,10 @@ const Footer = (props) => {
             <h3 className="footer-heading2">{props.heading1}</h3>
             <div className="footer-items1">
               <button className="footer-link4 button-clean button">
-                {props.link4}
+                About
               </button>
               <button className="footer-link5 button-clean button">
-                {props.link5}
-              </button>
-              <button className="footer-link6 button-clean button">
                 {props.link6}
-              </button>
-              <button className="footer-link7 button-clean button">
-                {props.link7}
-              </button>
-              <button className="footer-link8 button-clean button">
-                {props.link8}
               </button>
             </div>
           </div>
@@ -109,16 +98,13 @@ Footer.defaultProps = {
   linkTwitter: 'https://twitter.com',
   heading1: 'Company',
   copyright: '© 2024 NotionPod.co All Rights Reserved.',
-  imageSrc3: 'c0e4ac5c-39a4-4c07-9115-3b6ad693a75a',
   imageAlt1: 'image',
-  linkDiscord1: 'https://discord.com',
   link1: 'Collection',
   link3: 'Features',
   link6: 'Terms',
   link4: 'Team',
   caption: 'Do more on Notion.so with us',
   imageSrc: '/Icons/twitter.svg',
-  imageAlt3: 'image',
   heading: 'Site',
   link8: 'Licenses',
   imageSrc2: '/Icons/twitter.svg',
@@ -138,16 +124,13 @@ Footer.propTypes = {
   linkTwitter: PropTypes.string,
   heading1: PropTypes.string,
   copyright: PropTypes.string,
-  imageSrc3: PropTypes.string,
   imageAlt1: PropTypes.string,
-  linkDiscord1: PropTypes.string,
   link1: PropTypes.string,
   link3: PropTypes.string,
   link6: PropTypes.string,
   link4: PropTypes.string,
   caption: PropTypes.string,
   imageSrc: PropTypes.string,
-  imageAlt3: PropTypes.string,
   heading: PropTypes.string,
   link8: PropTypes.string,
   imageSrc2: PropTypes.string,

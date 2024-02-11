@@ -1,10 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import Script from 'dangerous-html/react'
 import { Helmet } from 'react-helmet'
 
 import Navbar from '../components/navbar'
-import FAQ from '../components/faq'
 import Footer from '../components/footer'
 import './home.css'
 
@@ -37,44 +37,56 @@ const Home = (props) => {
           </p>
         </div>
         <div className="home-buttons">
-          <button className="button">Browse our templates</button>
-          <button className="home-learn button-clean button">Learn more</button>
+          <Link to="/collection" className="home-view button">
+            Browse our collection
+          </Link>
+          <a href="#landing-desc" className="home-learn button-clean button">
+            Learn more
+          </a>
         </div>
       </section>
       <section className="home-description">
-        <img
-          alt="image"
-          src="/hero-divider-1500w.png"
-          className="home-divider-image"
-        />
         <div className="home-container1">
-          <div className="home-description1">
+          <div id="landing-desc" className="home-description1">
             <div className="home-content">
               <p className="home-paragraph">
-                We are a team of digital aute irure dolor in reprehenderit in
-                voluptate velit esse cillum dolore eu fugiat.
+                We are a small team of digital product experts who have been
+                using Notion.so for our daily work and personal tasks since
+                2019.
               </p>
               <p className="home-paragraph1">
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                qui officia deserunt mollit anim id est laborum. Nemo enim ipsam
-                voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+                <span>
+                  Notion&apos;s versatility has empowered us to streamline
+                  workflows, enhance productivity, and maintain effective
+                  communication channels.
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: ' ',
+                    }}
+                  />
+                </span>
+                <br></br>
+                <br></br>
+                <span>
+                  From project management, OKRs tracking, monthly evaluation,
+                  daily tasks, to personal note-taking, Notion.so has proven
+                  invaluable in facilitating our team&apos;s success and
+                  efficiency across various endeavors.
+                </span>
               </p>
             </div>
-            <div className="home-links">
-              <a
-                href="https://twitter.com"
-                target="_blank"
-                rel="noreferrer noopener"
-                className="home-link button-link button"
-              >
-                <span>Follow us on Twitter</span>
-                <img
-                  alt="image"
-                  src="/Icons/arrow.svg"
-                  className="home-arrow"
-                />
-              </a>
-            </div>
+            <Link to="/collection" className="home-navlink">
+              <div className="home-links">
+                <button className="home-button button-link button">
+                  <span>Browse our Notion collection</span>
+                  <img
+                    alt="image"
+                    src="/Icons/arrow.svg"
+                    className="home-arrow"
+                  />
+                </button>
+              </div>
+            </Link>
           </div>
         </div>
       </section>
@@ -90,22 +102,26 @@ const Home = (props) => {
             </div>
             <div className="home-main">
               <div className="home-content1">
-                <h2 className="home-header01">10,000+ unique characters</h2>
+                <h2 className="home-header01">30+ unique DBs and relations</h2>
                 <p className="home-description2">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliquat
-                  enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi
+                  With over 30 unique databases and interconnected relations, we
+                  bring a wealth of experience to the table, ensuring that your
+                  digital workspace is optimized for effective operations.
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: ' ',
+                    }}
+                  />
                 </p>
               </div>
-              <button className="home-learn1 button">
-                <span className="home-text05">Learn more</span>
+              <Link to="/services" className="home-learn1 button">
+                <span className="home-text09">See our services</span>
                 <img
                   alt="image"
                   src="/Icons/arrow.svg"
                   className="home-image"
                 />
-              </button>
+              </Link>
             </div>
           </div>
           <div className="home-card1">
@@ -119,158 +135,150 @@ const Home = (props) => {
             <div className="home-main1">
               <div className="home-content2">
                 <h2 className="home-header02">
-                  Create yourself for the metaverse
+                  ≥ 10 years of product dev experience
                 </h2>
                 <p className="home-description3">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliquat
-                  enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi
+                  With over a decade of experience under our belt, we bring a
+                  refined understanding of innovation and craftsmanship to every
+                  project.
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: ' ',
+                    }}
+                  />
                 </p>
               </div>
-              <button className="home-learn2 button">
-                <span className="home-text06">Learn more</span>
+              <Link to="/about" className="home-learn2 button">
+                <span className="home-text10">Learn more</span>
                 <img
                   alt="image"
                   src="/Icons/arrow-2.svg"
-                  className="home-image01"
+                  className="home-image1"
                 />
-              </button>
+              </Link>
             </div>
           </div>
         </div>
         <div className="home-card2">
-          <div className="home-avatar4">
-            <img
-              alt="image"
-              src="/Avatars/light-avatar.svg"
-              className="home-avatar5"
-            />
-          </div>
           <div className="home-row1">
             <div className="home-main2">
               <div className="home-content3">
                 <h2 className="home-header03">
-                  Create yourself for the metaverse
+                  Elevate your business ops with us
                 </h2>
                 <p className="home-description4">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliquat
-                  enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi
+                  Unleash the full potential of Notion&apos;s versatile features
+                  and customizable interface. From seamless collaboration to
+                  streamlined business operations, empower yourself to achieve
+                  more than ever before. Transform your workflow and unlock
+                  limitless possibilities - supercharge your workspace on Notion
+                  today.
                 </p>
               </div>
               <button className="home-learn3 button">
-                <span className="home-text07">Learn more</span>
+                <span className="home-text11">Hire us</span>
                 <img
                   alt="image"
                   src="/Icons/arrow-2.svg"
-                  className="home-image02"
+                  className="home-image2"
                 />
               </button>
             </div>
-            <img alt="image" src="/group%202262.svg" className="home-image03" />
           </div>
         </div>
       </section>
       <section className="home-project">
         <div className="home-understand">
           <div className="home-content4">
-            <span className="home-caption1">Project</span>
+            <span className="home-caption1">our approach</span>
             <div className="home-heading1">
-              <h2 className="home-header04">Understand the project</h2>
+              <h2 className="home-header04">All about simplified ops</h2>
               <p className="home-header05">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                At our core, we prioritize refining information architecture to
+                ensure effortless navigation and unparalleled efficiency.
+                Whether it&apos;s project management, collaborative endeavors,
+                or personal organization, we specialize in simplifying
+                operations to empower you to achieve more with ease. With our
+                focused approach and dedication to optimizing workflows, trust
+                us to elevate your experience on Notion.so to new heights. Say
+                goodbye to complexity and embrace the simplicity of seamless
+                operations with us by your side
               </p>
             </div>
-            <button className="home-view1 button-link button">
-              <span>Learn More</span>
-              <img
-                alt="image"
-                src="/Icons/arrow.svg"
-                className="home-image04"
-              />
-            </button>
+            <Link to="/collection" className="home-view1 button-link button">
+              <span>Browse our collection</span>
+              <img alt="image" src="/Icons/arrow.svg" className="home-image3" />
+            </Link>
           </div>
-          <img alt="image" src="/group%202415.svg" className="home-image05" />
+          <img alt="image" src="/group%202415.svg" className="home-image4" />
         </div>
         <div className="home-mining">
-          <img alt="image" src="/group%202422.svg" className="home-image06" />
+          <img alt="image" src="/group%202422.svg" className="home-image5" />
           <div className="home-content5">
-            <span className="home-caption2">Project</span>
+            <span className="home-caption2">Service</span>
             <div className="home-heading2">
-              <h2 className="home-header06">How the minting works</h2>
+              <h2 className="home-header06">How we assist you</h2>
               <p className="home-header07">
                 <span>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
+                  Experience streamlined business operations on your Notion
+                  workspace with our simple, four-step approach:
                 </span>
                 <br></br>
                 <br></br>
-                <span>
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur.
-                </span>
+                <span>Assessment → Customization → Training → Support</span>
                 <br></br>
               </p>
             </div>
-            <button className="home-view2 button-link button">
-              <span>Learn More</span>
-              <img
-                alt="image"
-                src="/Icons/arrow.svg"
-                className="home-image07"
-              />
-            </button>
+            <Link to="/services" className="home-view2 button-link button">
+              <span>
+                <span>See our services</span>
+                <br></br>
+              </span>
+              <img alt="image" src="/Icons/arrow.svg" className="home-image6" />
+            </Link>
           </div>
         </div>
       </section>
       <section className="home-roadmap">
         <div className="home-heading3">
-          <h2 className="home-header08">Roadmap</h2>
+          <h2 className="home-header08">Timeline of Engagement</h2>
           <p className="home-header09">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore
+            <span>
+              Experience the difference of expert assistance in unlocking the
+              full potential of Notion. Let us be your partner in
+              revolutionizing your workflow and achieving unparalleled
+              productivity and more revenue.
+            </span>
+            <br></br>
           </p>
         </div>
         <div className="home-list">
           <div className="home-step">
             <span className="home-caption3">01</span>
             <div className="home-heading4">
-              <h2 className="home-header10">Project Launch</h2>
+              <h2 className="home-header10">Assessment</h2>
               <p className="home-header11">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                We start by understanding your current workflows and pain points
+                to identify areas for improvement.
               </p>
             </div>
-            <button className="home-button button">View on Opensea</button>
+            <a
+              href="https://calendly.com/notionpodco/30min"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="home-link button"
+            >
+              Book an intro call
+            </a>
           </div>
           <div className="home-step1">
             <span className="home-caption4">02</span>
             <div className="home-heading5">
-              <h2 className="home-header12">Metadata and Character</h2>
+              <h2 className="home-header12">Customization</h2>
               <p className="home-header13">
                 <span>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: ' ',
-                    }}
-                  />
-                </span>
-                <br></br>
-                <br></br>
-                <span>
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
+                  Leveraging our expertise, we customize your Notion workspace
+                  to align with your specific business needs and objectives.
                 </span>
                 <br></br>
               </p>
@@ -279,22 +287,12 @@ const Home = (props) => {
           <div className="home-step2">
             <span className="home-caption5">03</span>
             <div className="home-heading6">
-              <h2 className="home-header14">Get Physical</h2>
+              <h2 className="home-header14">Training</h2>
               <p className="home-header15">
                 <span>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: ' ',
-                    }}
-                  />
-                </span>
-                <br></br>
-                <br></br>
-                <span>
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
+                  Through personalized training sessions, we empower you and
+                  your team to effectively utilize Notion&apos;s features and
+                  maximize productivity.
                 </span>
                 <br></br>
               </p>
@@ -303,42 +301,17 @@ const Home = (props) => {
           <div className="home-step3">
             <span className="home-caption6">04</span>
             <div className="home-heading7">
-              <h2 className="home-header16">Private club community</h2>
+              <h2 className="home-header16">Support</h2>
               <p className="home-header17">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Our commitment doesn&apos;t end with implementation. We provide
+                ongoing support and guidance to ensure smooth integration and
+                continued success.
                 <span
                   dangerouslySetInnerHTML={{
                     __html: ' ',
                   }}
                 />
               </p>
-              <div className="home-benefits">
-                <div className="home-item">
-                  <img
-                    alt="image"
-                    src="/Icons/people.svg"
-                    className="home-image08"
-                  />
-                  <p className="home-header18">Consectetur adipiscing elit</p>
-                </div>
-                <div className="home-item1">
-                  <img
-                    alt="image"
-                    src="/Icons/paper.svg"
-                    className="home-image09"
-                  />
-                  <p className="home-header19">Consectetur adipiscing elit</p>
-                </div>
-                <div className="home-item2">
-                  <img
-                    alt="image"
-                    src="/Icons/checklist.svg"
-                    className="home-image10"
-                  />
-                  <p className="home-header20">Consectetur adipiscing elit</p>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -347,51 +320,17 @@ const Home = (props) => {
         <div className="home-content6">
           <div className="home-main3">
             <div className="home-heading8">
-              <h2 className="home-header21">Create your character now</h2>
+              <h2 className="home-header18">
+                Supercharge your workspace — Now!
+              </h2>
               <p className="home-caption7">
-                A character custom collection is joining the NFT space on
-                Opensea.
+                Experience the epitome of streamlined operations with our
+                expertise on Notion.so.
               </p>
             </div>
-            <button className="home-view3 button">View on Opensea</button>
+            <button className="home-view3 button">Hire us!</button>
           </div>
-          <img alt="image" src="/group%202273.svg" className="home-image11" />
-        </div>
-      </section>
-      <FAQ></FAQ>
-      <section className="home-get-yours">
-        <div className="home-row2">
-          <div className="home-column">
-            <div className="home-card3">
-              <img
-                alt="image"
-                src="/Characters/character-9.svg"
-                className="home-image12"
-              />
-            </div>
-          </div>
-          <div className="home-column1">
-            <div className="home-card4">
-              <img
-                alt="image"
-                src="/Characters/character-10.svg"
-                className="home-image13"
-              />
-            </div>
-          </div>
-        </div>
-        <div className="home-column2">
-          <div className="home-card5">
-            <div className="home-content7">
-              <h2 className="home-header22">Get yours now</h2>
-              <p className="home-description5">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliquat enim
-                ad minim veniam.
-              </p>
-            </div>
-            <button className="home-button1 button">View on Opensea</button>
-          </div>
+          <img alt="image" src="/group%202273.svg" className="home-image7" />
         </div>
       </section>
       <Footer></Footer>
