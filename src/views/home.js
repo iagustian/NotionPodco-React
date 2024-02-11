@@ -124,9 +124,9 @@ const Home = (props) => {
                   ≥ 10 years of product dev experience
                 </h2>
                 <p className="home-description3">
-                  With over a decade of experience under our belt, we bring a
-                  refined understanding of innovation and craftsmanship to every
-                  project.
+                  With over a decade of product development experience under our
+                  belt, we bring a refined understanding of innovation and
+                  craftsmanship to every project.
                   <span
                     dangerouslySetInnerHTML={{
                       __html: ' ',
@@ -153,16 +153,27 @@ const Home = (props) => {
                   Elevate your business ops with us
                 </h2>
                 <p className="home-description4">
-                  Unleash the full potential of Notion&apos;s versatile features
-                  and customizable interface. From seamless collaboration to
-                  streamlined business operations, empower yourself to achieve
-                  more than ever before. Transform your workflow and unlock
-                  limitless possibilities - supercharge your workspace on Notion
-                  today.
+                  <span>
+                    Unleash the full potential of Notion&apos;s versatile
+                    features and customizable interface. From seamless
+                    collaboration to streamlined business operations, empower
+                    yourself to achieve more than ever before.
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: ' ',
+                      }}
+                    />
+                  </span>
+                  <br></br>
+                  <br></br>
+                  <span>
+                    Transform your workflow and unlock limitless possibilities -
+                    supercharge your workspace on Notion today.
+                  </span>
                 </p>
               </div>
               <button className="home-learn3 button">
-                <span className="home-text07">Hire us</span>
+                <span className="home-text11">Hire us</span>
                 <img
                   alt="image"
                   src="/Icons/arrow-2.svg"
@@ -180,15 +191,26 @@ const Home = (props) => {
             <div className="home-heading1">
               <h2 className="home-header04">All about simplified ops</h2>
               <p className="home-header05">
-                At our core, we prioritize refining information architecture to
-                ensure effortless navigation and unparalleled efficiency.
-                Whether it&apos;s project management, collaborative endeavors,
-                or personal organization, we specialize in simplifying
-                operations to empower you to achieve more with ease. With our
-                focused approach and dedication to optimizing workflows, trust
-                us to elevate your experience on Notion.so to new heights. Say
-                goodbye to complexity and embrace the simplicity of seamless
-                operations with us by your side
+                <span>
+                  At our core, we prioritize refining information architecture
+                  to ensure effortless navigation and unparalleled efficiency.
+                  Whether it&apos;s project management, collaborative endeavors,
+                  or personal organization, we specialize in simplifying
+                  operations to empower you to achieve more with ease.
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: ' ',
+                    }}
+                  />
+                </span>
+                <br></br>
+                <br></br>
+                <span>
+                  With our focused approach and dedication to optimizing
+                  workflows, trust us to elevate your experience on Notion.so to
+                  new heights. Say goodbye to complexity and embrace the
+                  simplicity of seamless operations with us by your side
+                </span>
               </p>
             </div>
             <Link to="/collection" className="home-view1 button-link button">
