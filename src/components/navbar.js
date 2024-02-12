@@ -125,6 +125,7 @@ const Navbar = (props) => {
 }
 
 Navbar.defaultProps = {
+  button11: 'Collection',
   logo: 'NotionPod.co',
   register: 'Hire us!',
   button3: 'Blog',
@@ -138,10 +139,10 @@ Navbar.defaultProps = {
   text3: 'Team',
   imageAlt: 'image',
   logo1: 'Character',
-  button11: 'Collection',
 }
 
 Navbar.propTypes = {
+  button11: PropTypes.string,
   logo: PropTypes.string,
   register: PropTypes.string,
   button3: PropTypes.string,
@@ -155,7 +156,6 @@ Navbar.propTypes = {
   text3: PropTypes.string,
   imageAlt: PropTypes.string,
   logo1: PropTypes.string,
-  button11: PropTypes.string,
 }
 
 export default Navbar
