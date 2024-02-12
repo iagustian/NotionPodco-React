@@ -112,7 +112,7 @@
   align-items: center;
   justify-content: center;
 }
-.navbar-icon02 {
+.navbar-icon2 {
   width: var(--dl-size-size-xsmall);
   height: var(--dl-size-size-xsmall);
 }
@@ -148,19 +148,10 @@
 .navbar-icon-group {
   display: flex;
 }
-.navbar-icon04 {
+.navbar-icon4 {
   width: var(--dl-size-size-xsmall);
   height: var(--dl-size-size-xsmall);
   margin-right: var(--dl-space-space-twounits);
-}
-.navbar-icon06 {
-  width: var(--dl-size-size-xsmall);
-  height: var(--dl-size-size-xsmall);
-  margin-right: var(--dl-space-space-twounits);
-}
-.navbar-icon08 {
-  width: var(--dl-size-size-xsmall);
-  height: var(--dl-size-size-xsmall);
 }
 .navbar-root-class-name {
   width: 100%;
