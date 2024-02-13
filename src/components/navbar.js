@@ -92,9 +92,12 @@ const Navbar = (props) => {
               <span className="navbar-text3">{props.text4}</span>
             </nav>
             <div className="navbar-container2">
-              <button className="navbar-login button">
+              <Link
+                to="/collection"
+                className="navbar-browse-our-collection button"
+              >
                 Browse our collection
-              </button>
+              </Link>
               <button className="button">{props.register}</button>
             </div>
           </div>

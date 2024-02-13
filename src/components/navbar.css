@@ -142,8 +142,9 @@
   align-items: center;
   flex-direction: row;
 }
-.navbar-login {
+.navbar-browse-our-collection {
   margin-right: var(--dl-space-space-twounits);
+  text-decoration: none;
 }
 .navbar-icon-group {
   display: flex;
